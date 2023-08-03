@@ -1,7 +1,7 @@
 import NavLink from './navLink'
 
 const styles = {
-  nav: `bg-black h-screen w-96 p-5 py-10 `,
+  nav: `bg-black h-auto w-96 p-5 py-10 `,
   link: `hover:text-[#fff]`,
   playlistName: `text-[#b3b3b3] cursor-default text-sm hover:text-[#fff]`
 }
@@ -10,7 +10,9 @@ const Nav = () => {
   return (
     <div className={styles.nav}>
       <div className='mb-10'>
+      <a href='https://ravinshuk.github.io/SE-PRoject/'  id="home" >
         <NavLink icon='assets/home.svg' title='Home' className={styles.link} />
+        </a>
         <NavLink
           icon='assets/search.svg'
           title='Search'
